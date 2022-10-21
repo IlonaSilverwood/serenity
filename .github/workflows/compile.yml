@@ -1,0 +1,28 @@
+name: Compile files
+
+on:
+  # Build any branch or PR
+  push:
+  pull_request:
+
+jobs:
+  build:
+    name: Guides
+    runs-on: ubuntu-latest
+
+    container:
+      image: pandoc/core:edge
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build HTML
+        run: >-
+          for file in *.md; do pandoc $file -o ${file%.md}.html -s; done
+
+      - name: Upload HTML
+        uses: actions/upload-artifact@v3
+        with:
+          name: guides
+          path: '*.html'

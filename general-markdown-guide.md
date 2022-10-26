@@ -47,6 +47,12 @@ publications. We encourage authors to use hyperlinks for websites and
 other external resources. However, the standard scientific practice of
 citing the relevant publications should be followed regardless.
 
+### Tables
+Guide to grid tables will go here.
+
+### Illustrations
+Guide to illustrations will go here.
+
 ### Images
 
 Markdown syntax for an image is that of a link, preceded by an

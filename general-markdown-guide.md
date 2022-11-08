@@ -47,8 +47,96 @@ publications. We encourage authors to use hyperlinks for websites and
 other external resources. However, the standard scientific practice of
 citing the relevant publications should be followed regardless.
 
-### Tables
-Guide to grid tables will go here.
+### Grid Tables
+Grid table syntax uses the characters "-", "=", "|", and "+" to represent a visual grid.
+
+Hyphens (-) separate horizontal rows.
++-------------------+
+| row 1             |
++-------------------+
+| row 2             |
++-------------------+
+
+ The equals sign (=) produces an optional header when used to create the row under the header text.
+
++-------------------+
+| Header row 1      |
++===================+
+| row 2             |
++-------------------+
+| row 3             |
++-------------------+
+ 
+ The equals sign (=) also creates an optional footer when used to enclose the last row of the table.
+
++-------------------+
+| Header 1          |
++===================+
+| row 2             |
++-------------------+
+| row 3             |
++===================+
+| Footer            |
++===================+
+
+The vertical bar (|) separates columns and also adjusts the depth of a row. The plus sign (+) indicates a juncture between horizontal and parallel lines.
+
++-------------------+------------+----------+----------+
+| Header 1          | Header 2   | Header 3 | Header 4 |
++===================+============+==========+==========+
+| row 1, column 1   | column 2   | column 3 | column 4 |
++-------------------+------------+----------+----------+
+| row 2             |            |          |          |
++===================+============+=====================+
+| Footer                                               |
++===================+============+=====================+
+
+Inserting a colon (:) at the boundaries of the separator line after the header will change text alignment. If there is no header, insert colons into the top line.
+
++-------------------+-----------------+-----------------+
+| Centered          | Left aligned    | Right aligned   |
++:=================:+:================+================:+
+
+Cells are able to span rows by using vertical bars to increase cell height.
+
++-------------------+------------+----------+----------+
+| Header 1          | Header 2   | Header 3 | Header 4 |
+|                   |            |          |          |
++:=================:+:==========:+:========:+:========:+
+| row 1, column 1   | column 2   | column 3 | column 4 |
++-------------------+            |          |          |
+|                   |            |          |          |
++-------------------+------------+----------+----------+
+
+Cells can also span columns.
+
++-------------------+------------+----------+----------+
+| Header 1          | Header 2   | Header 3 | Header 4 |
+|                   |            |          |          |
++:=================:+:==========:+:========:+:========:+
+| row 1, column 1   | column 2   | column 3 | column 4 |
++-------------------+------------+----------+----------+
+| row 2             | cells span columns               |
++-------------------+------------+---------------------+
+
+Sample grid table:
++-------------------+------------+----------+----------+
+| Header 1          | Header 2   | Header 3 | Header 4 |
+|                   |            |          |          |
++:=================:+:==========:+:========:+:========:+
+| row 1, column 1   | column 2   | column 3 | column 4 |
++-------------------+------------+----------+----------+
+| row 2             | cells span columns               |
++-------------------+------------+---------------------+
+| row 3             | cells      | - body              |
++-------------------+ span rows  | - elements          |
+| row 4             |            | - here              |
++===================+============+=====================+
+| Footer                                               |
++===================+============+=====================+
+
+Note:
+Intersections of horizontal and vertical lines must be represented with a plus sign (+).
 
 ### Illustrations
 Guide to illustrations will go here.

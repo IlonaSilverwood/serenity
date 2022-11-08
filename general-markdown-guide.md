@@ -139,8 +139,8 @@ Sample grid table:
 Note:
 Intersections of horizontal and vertical lines must be represented with a plus sign (+).
 
-### Illustrations
-Guide to illustrations will go here.
+### Figures
+Guide to figures will go here.
 
 ### Images
 

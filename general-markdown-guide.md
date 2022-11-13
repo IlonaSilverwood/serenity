@@ -87,9 +87,9 @@ The vertical bar (|) separates columns and also adjusts the depth of a row. The 
 | row 1, column 1   | column 2   | column 3 | column 4 |
 +-------------------+------------+----------+----------+
 | row 2             |            |          |          |
-+===================+============+=====================+
++===================+============+==========+==========+
 | Footer                                               |
-+===================+============+=====================+
++===================+============+==========+==========+
 
 Inserting a colon (:) at the boundaries of the separator line after the header will change text alignment. If there is no header, insert colons into the top line.
 

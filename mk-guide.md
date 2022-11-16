@@ -56,7 +56,7 @@ Complex information can be conveyed by using the following features not found in
 * adding footers
 * using intra-cellular body elements
 * creating multi-row headers
-
+<!-- should I remove the " " around special characters? -->
 Grid table syntax uses the characters "-", "=", "|", and "+" to represent the table outline:
 * Hyphens (-) separate horizontal rows.
 * Equals signs (=) produce a header when used to create the row under the header text.

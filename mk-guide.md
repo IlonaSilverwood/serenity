@@ -83,9 +83,6 @@ Sample grid table:
 | Footer                                               |
 +===================+============+=====================+
 
-### Figures
-Guide to figures will go here.
-
 ### Images
 
 Markdown syntax for an image is that of a link, preceded by an

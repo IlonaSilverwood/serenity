@@ -54,7 +54,8 @@ Grid tables are made up of special characters which form the rows and columns, a
 Complex information can be conveyed by using the following features not found in other table styles:
 * spanning columns
 * adding footers
-* adding intra-cellular body elements
+* using intra-cellular body elements
+* creating multi-row headers
 
 Grid table syntax uses the characters "-", "=", "|", and "+" to represent the table outline:
 * Hyphens (-) separate horizontal rows.

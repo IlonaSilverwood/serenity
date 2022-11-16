@@ -1,6 +1,6 @@
 # Introduction
 
-This article contains a general introduction to the popular markup language Markdown, as well as the formatting requirements of Open Journals and the Journal of Open Source Software (JOSS). 
+This article contains a general introduction to the popular markup language Markdown, as well as the formatting requirements of Open Journals (OJ) and the Journal of Open Source Software (JOSS). 
 
 ## Markdown summary
 

@@ -8,7 +8,7 @@ Markdown is a lightweight markup language used frequently in software developmen
 
 # Markdown primer
 
-This section explains basic Markdown syntax. If you are already familiar with Markdown, the JOSS formatting requirements can be found [here].
+This section explains basic Markdown syntax. If you are already familiar with Markdown, the JOSS formatting requirements can be found [here](addlinkhere).
 
 ## Inline markup
 

@@ -52,12 +52,14 @@ citing the relevant publications should be followed regardless.
 Grid tables are made up of special characters which form the rows and columns, and also change table and style variables.
 
 Complex information can be conveyed by using the following features not found in other table styles:
+
 * spanning columns
 * adding footers
 * using intra-cellular body elements
 * creating multi-row headers
-<!-- should I remove the " " around special characters? -->
+
 Grid table syntax uses the characters "-", "=", "|", and "+" to represent the table outline:
+
 * Hyphens (-) separate horizontal rows.
 * Equals signs (=) produce a header when used to create the row under the header text.
 * Equals signs (=) create a footer when used to enclose the last row of the table.
@@ -83,36 +85,15 @@ Sample grid table:
 | Footer                                               |
 +===================+============+=====================+
 
-### Images
+# Figures
 
-Markdown syntax for an image is that of a link, preceded by an
-exclamation mark `!`.
+To create a figure, a captioned image must appear by itself in a paragraph. The Markdown syntax for a figure is a link, preceded by an exclamation point (!) and a description.  
+Example:  
+![This description will be the figure caption](path/to/image.png)
 
-The main use of images in papers is within figures. An image is treated
-as a figure if
+In order to create a figure rather than an image, there must be a description included and the figure syntax must be the only element in the paragraph, i.e., it must be surrounded by blank lines.
 
-1. it has a non-empty description, which will be used as the figure
-   label and
-2. it is the only element in a paragraph, i.e., it must be surrounded by
-   blank lines.
-   
-Example:
-
-```markdown
-![Figure caption](path/to/image.png)
-```
-
-Images that are larger than the text area are scaled to fit the page. It
-can sometimes be useful to give images an explicit height and/or width,
-e.g. when adding an image as part of a paragraph. The Markdown `![Nyan
-cat](nyan-cat.png){height="9pt"}` includes the image "nyan-cat.png"
-![Nyan cat](nyan-cat.png){height="9pt"} while scaling it to a height of
-9 pt.
-
-
-![The "Mandrill" standard test image, sometimes erroneously called
-"Baboon", is a popular sample photo and used in image processing
-research.](mandrill.jpg){#fig:mandrill}
+Images that are larger than the text area are scaled to fit the page. You can give images an explicit height and/or width, e.g. when adding an image as part of a paragraph. The Markdown ![Nyan cat](nyan-cat.png){height="9pt"} includes the image "nyan-cat.png" Nyan cat{height="9pt"} while scaling it to a height of 9 pt.
 
 ### Citations
 

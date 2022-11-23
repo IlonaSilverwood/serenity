@@ -85,7 +85,7 @@ Sample grid table:
 | Footer                                               |
 +===================+============+=====================+
 
-# Figures
+### Figures
 
 To create a figure, a captioned image must appear by itself in a paragraph. The Markdown syntax for a figure is a link, preceded by an exclamation point (!) and a description.  
 Example:  

@@ -9,8 +9,8 @@ artifacts.
 Submitted articles must provide a metadata section at the beginning of the
 article, before the main text. Metadata must be formatted using YAML, a
 human-friendly data serialization language (The Official YAML Web Site, 2022).
-This information is included in the title and sidebar of the subsequently generated
-PDF.
+This information is included in the title and sidebar of the subsequently
+generated PDF.
 
 Authors who face difficulties while writing are referred to the paper by
 @upper1974.
@@ -22,10 +22,10 @@ Authors who face difficulties while writing are referred to the paper by
 
 JOSS maintains a detailed and helpful
 [article](https://joss.readthedocs.io/en/latest/submitting.html) on the
-requirements articles must satisfy in order to be considered for
-publication. However, the linked article does not provide guidance on using the
-lightweight markup language *Markdown*, which is the required format for papers
-submitted to JOSS.
+requirements articles must satisfy in order to be considered for publication.
+However, the linked article does not provide guidance on using the lightweight
+markup language *Markdown*, which is the required format for papers submitted to
+JOSS.
 
 This article explains the technical details and describes the publishing
 system's capabilities. It can also be used as a test document, or serve as a
@@ -121,6 +121,10 @@ Indicate joint first authors by setting the `equal-contrib` attribute.
 - name: Janet Davison
   equal-contrib: true
 ```
+
+## Collaborating authors
+
+
   
 ## Email
 

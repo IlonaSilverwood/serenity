@@ -9,8 +9,8 @@ artifacts.
 Submitted articles must provide a metadata section at the beginning of the
 article, before the main text. Metadata must be formatted using YAML, a
 human-friendly data serialization language (The Official YAML Web Site, 2022).
-This information is included in the title and sidebar of the subsequently
-generated PDF.
+This information is included in the title and sidebar of the subsequently generated
+PDF.
 
 Authors who face difficulties while writing are referred to the paper by
 @upper1974.
@@ -22,10 +22,10 @@ Authors who face difficulties while writing are referred to the paper by
 
 JOSS maintains a detailed and helpful
 [article](https://joss.readthedocs.io/en/latest/submitting.html) on the
-requirements articles must satisfy in order to be considered for publication.
-However, the linked article does not provide guidance on using the lightweight
-markup language *Markdown*, which is the required format for papers submitted to
-JOSS.
+requirements articles must satisfy in order to be considered for
+publication. However, the linked article does not provide guidance on using the
+lightweight markup language *Markdown*, which is the required format for papers
+submitted to JOSS.
 
 This article explains the technical details and describes the publishing
 system's capabilities. It can also be used as a test document, or serve as a
@@ -35,17 +35,12 @@ template that can be used as a starting point.
 
 ## Names
 
-Use a simple `name` attribute to set an author name. 
-
-``` yaml
-- name: John Doe
-```
-For complex situations, we support more specific name part attributes.
+Providing an author name is straightforward: just set the `name` attribute.
+However, sometimes fine-grained control over the name is required.
 
 ### Name parts
 
-There are many ways to describe the parts of names; we support the following
-descriptors:
+There are many ways to describe the parts of names; we support the following:
 
 - given names,
 - surname,
@@ -68,11 +63,9 @@ attribute is given as well.
 
 ### Particles
 
-Particles like "van", "von", "della", etc. can be placed at the end of the given
-name or at the beginning of the surname, depending on the specifics of how the
-name is used.
-
-Set dropping and non-dropping particles with the following attributes:
+It's usually enough to place particles like "van", "von", "della", etc. at the
+end of the given name or at the beginning of the surname, depending on the
+details of how the name is used.
 
 - `dropping-particle`
 - `non-dropping-particle`
@@ -87,7 +80,7 @@ name explicitly. This is possible by setting the `literal` field, e.g.,
 
 ### Example
 
-``` yaml
+```yaml
 authors:
   - name: John Doe
     affiliation: '1'
@@ -132,12 +125,10 @@ Indicate joint first authors by setting the `equal-contrib` attribute.
 ## Email
 
 Include the author's email by setting the `email` attribute. 
-
 ``` yaml
 - name: John Doe
   equal-contrib: true
-  email: johndoe@email.ca
-  ```
+  email: johndoe@ubc.ca```
 
 
 # Internal references

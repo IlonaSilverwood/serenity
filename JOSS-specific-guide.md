@@ -122,9 +122,14 @@ Indicate joint first authors by setting the `equal-contrib` attribute.
   equal-contrib: true
 ```
 
-## Collaborating authors
+## Corresponding author
 
+Designate a corresponding author with the `corresponding` attribute.
 
+```yaml
+- name: John Doe
+  corresponding: true
+```
   
 ## Email
 

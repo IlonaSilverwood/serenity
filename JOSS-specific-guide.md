@@ -137,7 +137,8 @@ Include the author's email by setting the `email` attribute.
 ``` yaml
 - name: John Doe
   equal-contrib: true
-  email: johndoe@ubc.ca```
+  email: johndoe@ubc.ca
+```
 
 
 # Internal references

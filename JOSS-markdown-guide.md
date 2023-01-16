@@ -13,7 +13,8 @@ developed in 2004 by John Gruber and Aaron Swartz.
 # Markdown primer
 
 This section explains basic Markdown syntax. If you are already familiar with
-Markdown, the JOSS formatting requirements can be found [here](https://github.com/IlonaSilverwood/serenity/blob/main/JOSS-specific-guide.md).
+Markdown, the JOSS formatting requirements can be found
+[here](https://github.com/IlonaSilverwood/serenity/blob/main/JOSS-specific-guide.md).
 
 ## Inline markup
 
@@ -22,21 +23,21 @@ has some basic inline markup and examples.
 
 +---------------------+-------------------------+-----------------------+
 |Markup               | Markdown example        | Rendered output       |
-+:====================+:=======================:+:=====================:+ 
++:====================+:=======================:+:=====================:+
 |emphasis             | `*this*`                | *this*                |
-+---------------------+-------------------------+-----------------------+ 
++---------------------+-------------------------+-----------------------+
 |strong emphasis      | `**that**`              | **that**              |
-+---------------------+-------------------------+-----------------------+ 
++---------------------+-------------------------+-----------------------+
 |strikeout            | `~~not this~~`          | ~~not this~~          |
-+---------------------+-------------------------+-----------------------+ 
++---------------------+-------------------------+-----------------------+
 |subscript            | `H~2~O`                 | H~2~O                 |
 +---------------------+-------------------------+-----------------------+
 |superscript          | `Ca^2+^`                | Ca^2+^                |
-+---------------------+-------------------------+-----------------------+ 
++---------------------+-------------------------+-----------------------+
 |underline            | `[underline]{.ul}`      | [underline]{.ul}      |
-+---------------------+-------------------------+-----------------------+ 
++---------------------+-------------------------+-----------------------+
 |small caps           | `[Small Caps]{.sc}`     | [Small Caps]{.sc}     |
-+---------------------+-------------------------+-----------------------+ 
++---------------------+-------------------------+-----------------------+
 |inline code          | `` `return 23` ``       | `return 23`           |
 +---------------------+-------------------------+-----------------------+
 
@@ -82,17 +83,18 @@ top line.
 Sample grid table:
 
 +-------------------+------------+----------+----------+
-| Header 1          | Header 2   | Header 3 | Header 4 |
+| Header 1          |Header 2    | Header 3 | Header 4 |
 |                   |            |          |          |
 +:=================:+:==========:+:========:+:========:+
 | row 1, column 1   | column 2   | column 3 | column 4 |
 +-------------------+------------+----------+----------+
-| row 2             | cells span columns               |
-+-------------------+------------+---------------------+
-| row 3             | cells      | - body              |
-+-------------------+ span rows  | - elements          |
-| row 4             |            | - here              |
-+===================+============+=====================+
+| row 2                                                |          
+| cells span columns                                   |
++-------------------+------------+---------------------+ 
+| row 3                          | - body              |
+| cells span rows                | - elements          | 
+|                                |  - here             |
++===================+============+=====================+ 
 | Footer                                               |
 +===================+============+=====================+
 
@@ -116,8 +118,8 @@ of a paragraph. The Markdown `![Nyan cat](nyan-cat.png){height="9pt"}` includes
 the image "nyan-cat.png" Nyan cat{height="9pt"} while scaling it to a height of
 9 pt.
 
-![The "Mandrill" standard test image, sometimes erroneously called
-"Baboon", is a popular sample photo and used in image processing
+![The "Mandrill" standard test image, sometimes erroneously called "Baboon", is
+a popular sample photo and used in image processing
 research.](mandrill.jpg){#fig:mandrill}
 
 

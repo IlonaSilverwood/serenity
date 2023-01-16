@@ -13,7 +13,7 @@ developed in 2004 by John Gruber and Aaron Swartz.
 # Markdown primer
 
 This section explains basic Markdown syntax. If you are already familiar with
-Markdown, the JOSS formatting requirements can be found [here].
+Markdown, the JOSS formatting requirements can be found [here](https://github.com/IlonaSilverwood/serenity/blob/main/JOSS-specific-guide.md).
 
 ## Inline markup
 
@@ -83,44 +83,55 @@ top line.
 
 Sample grid table:
 
-+-------------------+------------+----------+----------+ | Header 1          |
-Header 2   | Header 3 | Header 4 | |                   |            |          |
-| +:=================:+:==========:+:========:+:========:+ | row 1, column 1   |
-column 2   | column 3 | column 4 |
-+-------------------+------------+----------+----------+ | row 2             |
-cells span columns               |
-+-------------------+------------+---------------------+ | row 3             |
-cells      | - body              | +-------------------+ span rows  | - elements
-| | row 4             |            | - here              |
-+===================+============+=====================+ | Footer
-| +===================+============+=====================+
++-------------------+------------+----------+----------+
+| Header 1          | Header 2   | Header 3 | Header 4 |
+|                   |            |          |          |
++:=================:+:==========:+:========:+:========:+
+| row 1, column 1   | column 2   | column 3 | column 4 |
++-------------------+------------+----------+----------+
+| row 2             | cells span columns               |
++-------------------+------------+---------------------+
+| row 3             | cells      | - body              |
++-------------------+ span rows  | - elements          |
+| row 4             |            | - here              |
++===================+============+=====================+
+| Footer                                               |
++===================+============+=====================+
 
 ### Figures
 
 To create a figure, a captioned image must appear by itself in a paragraph. The
 Markdown syntax for a figure is a link, preceded by an exclamation point (!) and
 a description.  
-Example:  
-![This description will be the figure caption](path/to/image.png)
+Example:
 
+```markdown
+[This description will be the figure caption](path/to/image.png)
+```
 In order to create a figure rather than an image, there must be a description
 included and the figure syntax must be the only element in the paragraph, i.e.,
 it must be surrounded by blank lines.
 
 Images that are larger than the text area are scaled to fit the page. You can
 give images an explicit height and/or width, e.g. when adding an image as part
-of a paragraph. The Markdown ![Nyan cat](nyan-cat.png){height="9pt"} includes
+of a paragraph. The Markdown `![Nyan cat](nyan-cat.png){height="9pt"}` includes
 the image "nyan-cat.png" Nyan cat{height="9pt"} while scaling it to a height of
 9 pt.
 
+![The "Mandrill" standard test image, sometimes erroneously called
+"Baboon", is a popular sample photo and used in image processing
+research.](mandrill.jpg){#fig:mandrill}
+
+
 ### Citations
 
-Bibliographic data should be collected in a `.bib` file; while BibLaTex is preferred, plain BibTeX is also acceptable.
-All major citation managers offer to export these formats.
+Bibliographic data should be collected in a `.bib` file; while BibLaTex is
+preferred, plain BibTeX is also acceptable. All major citation managers offer to
+export these formats.
 
 Cite a bibliography entry by referencing its identifier: `[@upper1974]` will
-create the reference "(Upper et al, 1974)". Omit the brackets when referring to the
-author as part of a sentence: "For a case study on writers block, see
+create the reference "(Upper et al, 1974)". Omit the brackets when referring to
+the author as part of a sentence: "For a case study on writers block, see
 @upper1974." Please refer to the [pandoc
 manual](https://pandoc.org/MANUAL#extension-citations) for additional features,
 including page locators, prefixes, suffixes, and suppression of author names in

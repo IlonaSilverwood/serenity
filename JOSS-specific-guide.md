@@ -143,17 +143,11 @@ Include the author's email by setting the `email` attribute.
 
 # Internal references
 
-The goal of Open Journals is to provide authors with a seamless and pleasant
+The goal of [Open Journals](https://theoj.org) is to provide authors with a seamless and pleasant
 writing experience. Since Markdown has no default mechanism to handle document
 internal references, known as “cross-references”, Open Journals supports a
 limited set of LaTex commands. In brief, elements that were marked with `\label`
 and can be referenced with `\ref` and `\autoref`.
-
-[Open Journals]: https://theoj.org
-
-![View of coastal dunes in a nature reserve on Sylt, an island in the North Sea.
-Sylt (Danish: *Slid*) is Germany's northernmost island.](sylt.jpg){#sylt
-width="100%"}
 
 ## Tables and figures
 

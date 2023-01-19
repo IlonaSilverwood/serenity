@@ -140,7 +140,7 @@ Include the author's email by setting the `email` attribute.
 ## Affiliations
 
 Show affiliations by including the `index` field with the `author`
-metadata, then setting the `name` and `index` fields in under the
+metadata, then setting the `name` and `index` fields under the
 `affiliations` attribute. 
 
 ``` yaml

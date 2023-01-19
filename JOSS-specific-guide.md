@@ -78,23 +78,20 @@ name explicitly. This is possible by setting the `literal` field, e.g.,
 `literal: Tachibana Taki`. This feature should only be used as a last resort.
 <!-- e.g., `literal: 宮水 三葉`. -->
 
-### Example
+#### Example
 
 ```yaml
 authors:
   - name: John Doe
-    affiliation: '1'
 
   - given-names: Ludwig
     dropping-particle: van
     surname: Beethoven
-    affiliation: '3'
 
   # not recommended, but common aliases can be used for name parts.
   - given: Louis
     non-dropping-particle: de
     family: Broglie
-    affiliation: '4'
 ```
 
 The name parts can also be collected under the author's `name`:
@@ -140,6 +137,34 @@ Include the author's email by setting the `email` attribute.
   email: johndoe@ubc.ca
 ```
 
+## Affiliations
+
+Show affiliations by including the `index` field with the `author`
+metadata, then setting the `name` and `index` fields under the
+`affiliations` attribute. 
+
+``` yaml
+- name: John Doe
+  equal-contrib: true
+  email: johndoe@ubc.ca
+  index: 2
+```
+
+```yaml
+affiliations:
+ - name: Lyman Spitzer, Jr. Fellow, Princeton University, USA
+   index: 1
+ - name: Institution Name, Country
+   index: 2
+ - name: Independent Researcher, Country
+   index: 3
+```
+Multiple affiliations must be enclosed in quotation marks. 
+
+```yaml
+- name: Jane Doe
+  index: "1, 2"
+```
 
 # Internal references
 

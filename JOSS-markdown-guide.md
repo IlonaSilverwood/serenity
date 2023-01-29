@@ -19,6 +19,7 @@ formatting requirements can be found
 The markup in Markdown should be semantic, not presentations. The table below has some basic inline
 markup and examples.
 
+```
 +---------------------+-------------------------+-----------------------+
 | Markup              | Markdown example        | Rendered output       |
 +:====================+:=======================:+:=====================:+
@@ -38,6 +39,7 @@ markup and examples.
 +---------------------+-------------------------+-----------------------+
 | inline code         | `` `return 23` ``       | `return 23`           |
 +---------------------+-------------------------+-----------------------+
+```
 
 ### Links
 
@@ -75,6 +77,7 @@ text alignment. If there is no header, insert colons into the top line.
 
 Sample grid table:
 
+```
 +-------------------+------------+----------+----------+
 | Header 1          | Header 2   | Header 3 | Header 4 |
 |                   |            |          |          |
@@ -89,6 +92,7 @@ Sample grid table:
 +===================+============+=====================+
 | Footer                                               |
 +===================+============+=====================+
+```
 
 ### Figures
 

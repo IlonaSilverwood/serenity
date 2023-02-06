@@ -1,7 +1,8 @@
 # Summary
 
 This section describes the features of the Journal of Open Source Software
-(JOSS) [@smith2018] publishing pipeline. The publishing method uses Markdown as
+(JOSS) [[@smith2018]](http://arfc.github.io/papers/smith_journal_2018.pdf)
+publishing pipeline. The publishing method uses Markdown as
 the input format, which is similar to the model described by @krewinkel2017. The
 files provided by the author serve as the source for all generated publishing
 artifacts.

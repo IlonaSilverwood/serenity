@@ -111,8 +111,11 @@ explicit height and/or width, e.g. when adding an image as part of a paragraph. 
 cat](nyan-cat.png){height="9pt"}` includes the image "nyan-cat.png" Nyan cat{height="9pt"} while
 scaling it to a height of 9 pt.
 
+Example:
+```
 ![The "Mandrill" standard test image, sometimes erroneously called "Baboon", is a popular sample
-photo and used in image processing research.](mandrill.jpg){#fig:mandrill}
+photo and used in image processing research.](mandrill.jpg)
+```
 
 
 ### Citations

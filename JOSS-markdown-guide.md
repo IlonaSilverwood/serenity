@@ -102,7 +102,7 @@ a figure is a link, preceded by an exclamation point (!) and a description.
 Example:
 
 ```markdown
-[This description will be the figure caption](path/to/image.png)
+![This description will be the figure caption](path/to/image.png)
 ```
 
 ```

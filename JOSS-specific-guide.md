@@ -1,21 +1,19 @@
 # Summary
 
 This section describes the features of the Journal of Open Source Software
-(JOSS) [@smith2018] publishing pipeline. The publishing method uses Markdown as
-the input format, which is similar to the model described by @krewinkel2017. The
+(JOSS) [[@smith2018]](https://peerj.com/articles/cs-147/) publishing pipeline. The publishing method uses Markdown as
+the input format, which is similar to the model described by [@krewinkel2017](https://peerj.com/articles/cs-112/). The
 files provided by the author serve as the source for all generated publishing
 artifacts.
 
 Submitted articles must provide a metadata section at the beginning of the
-article, before the main text. Metadata must be formatted using YAML, a
+article, before the main text. Metadata must be formatted using [YAML](https://yaml.org), a
 human-friendly data serialization language (The Official YAML Web Site, 2022).
 This information is included in the title and sidebar of the subsequently
 generated PDF.
 
 Authors who face difficulties while writing are referred to the paper by
-@upper1974.
-
-[YAML]: https://yaml.org
+[@upper1974](https://onlinelibrary.wiley.com/doi/epdf/10.1901/jaba.1974.7-497a).
 
 
 # Statement of Need
@@ -229,5 +227,5 @@ both of these publishing formats as well as many more.
 A common method for PDF generation is to go via LaTeX. However, support for
 tagging -- a requirement for accessible PDFs -- is not readily available for
 LaTeX. The current method used ConTeXt, to produce tagged PDF/A-3, a format
-suited for archiving [@pdfa3].
+suited for archiving [@pdfa3](https://www.pdf-tools.com/en/resources/pdfa-archive-format/pdfa-3-overview/).
 

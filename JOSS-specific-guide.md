@@ -1,20 +1,20 @@
 # Summary
 
 This section describes the features of the Journal of Open Source Software
-(JOSS) [[@smith2018]](https://peerj.com/articles/cs-147/) publishing pipeline. The publishing method uses Markdown as
-the input format, which is similar to the model described by [@krewinkel2017](https://peerj.com/articles/cs-112/). The
+(JOSS) [[@smith2018]](https://peerj.com/articles/cs-147/) publishing pipeline.
+The publishing method uses Markdown as the input format, which is similar to the
+model described by [@krewinkel2017](https://peerj.com/articles/cs-112/). The
 files provided by the author serve as the source for all generated publishing
 artifacts.
 
 Submitted articles must provide a metadata section at the beginning of the
-article, before the main text. Metadata must be formatted using [YAML](https://yaml.org), a
-human-friendly data serialization language (The Official YAML Web Site, 2022).
-This information is included in the title and sidebar of the subsequently
-generated PDF.
+article, before the main text. Metadata must be formatted using
+[YAML](https://yaml.org), a human-friendly data serialization language (The
+Official YAML Web Site, 2022). This information is included in the title and
+sidebar of the subsequently generated PDF.
 
 Authors who face difficulties while writing are referred to the paper by
 [@upper1974](https://onlinelibrary.wiley.com/doi/epdf/10.1901/jaba.1974.7-497a).
-
 
 # Statement of Need
 
@@ -31,6 +31,8 @@ template that can be used as a starting point.
 
 # Article metadata
 
+The metadata section must be formatted using YAML and placed at the beginning of
+the article.
 ## Names
 
 Providing an author name is straightforward: just set the `name` attribute.
@@ -137,8 +139,8 @@ Include the author's email by setting the `email` attribute.
 
 ## Affiliations
 
-Map the list of affiliation metadata values by including the `index` field with the `author`
-metadata, then setting the `name` and `index` fields under the
+Map the list of affiliation metadata values by including the `index` field with
+the `author` metadata, then setting the `name` and `index` fields under the
 `affiliations` attribute. 
 
 ``` yaml
@@ -166,11 +168,11 @@ Multiple affiliations must be enclosed in quotation marks.
 
 # Internal references
 
-The goal of [Open Journals](https://theoj.org) is to provide authors with a seamless and pleasant
-writing experience. Since Markdown has no default mechanism to handle document
-internal references, known as “cross-references”, Open Journals supports a
-limited set of LaTex commands. In brief, elements that were marked with `\label`
-and can be referenced with `\ref` and `\autoref`.
+The goal of [Open Journals](https://theoj.org) is to provide authors with a
+seamless and pleasant writing experience. Since Markdown has no default
+mechanism to handle document internal references, known as “cross-references”,
+Open Journals supports a limited set of LaTex commands. In brief, elements that
+were marked with `\label` and can be referenced with `\ref` and `\autoref`.
 
 ## Tables and figures
 
@@ -227,5 +229,6 @@ both of these publishing formats as well as many more.
 A common method for PDF generation is to go via LaTeX. However, support for
 tagging -- a requirement for accessible PDFs -- is not readily available for
 LaTeX. The current method used ConTeXt, to produce tagged PDF/A-3, a format
-suited for archiving [@pdfa3](https://www.pdf-tools.com/en/resources/pdfa-archive-format/pdfa-3-overview/).
+suited for archiving
+[@pdfa3](https://www.pdf-tools.com/en/resources/pdfa-archive-format/pdfa-3-overview/).
 
